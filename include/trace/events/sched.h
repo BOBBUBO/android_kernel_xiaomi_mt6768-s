@@ -157,11 +157,6 @@ TRACE_EVENT(sched_kthread_work_execute_end,
 	TP_printk("work struct %p: function %ps", __entry->work, __entry->function)
 );
 
-#ifdef CREATE_TRACE_POINTS
-static inline long __trace_sched_switch_state(bool preempt,
-						struct task_struct *p);
-#endif
-
 /*
  * Tracepoint for waking up a task:
  */
